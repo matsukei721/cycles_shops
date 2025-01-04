@@ -1,8 +1,12 @@
 source 'https://rubygems.org'
-gem 'jekyll', '<4'
+
 gem 'jekyll-archives'
 gem 'jekyll-sitemap'
 gem 'jekyll-paginate-v2'
 gem 'kramdown-parser-gfm'
-gem "jekyll", "~> 4.0"
-gem "github-pages", group: :jekyll_plugins
+
+# jekyllのバージョンを3.xに固定
+gem "jekyll", "~> 3.9"
+
+# github-pagesを使用する場合は3.xに一致させる
+gem "github-pages", "~> 228"
